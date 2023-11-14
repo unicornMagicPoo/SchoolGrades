@@ -8,7 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="frmSchoolSubjectManagement">
 
-    <Grid>
-        
+    <Grid Background="PowderBlue">
+        <Button x:Name="btnSave" Content="salva" HorizontalAlignment="Left" Margin="700,23,0,0" VerticalAlignment="Top" Height="55" Width="81" Foreground="DarkBlue" Background="White"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="434,23,0,0" VerticalAlignment="Top" Height="55" Width="80"  Foreground="DarkBlue" Background="White"/>
+        <Button x:Name="btnErase" Content="-" HorizontalAlignment="Left" Margin="533,23,0,0" VerticalAlignment="Top" Height="54" Width="81"  Foreground="DarkBlue" Background="White"/>
+        <Image x:Name="picSubjectColor" HorizontalAlignment="Left" Height="86" Margin="700,102,0,0" VerticalAlignment="Top" Width="82" Grid.Row="0"/>
+        <DataGrid x:Name="DgwSubjects" d:ItemsSource="{d:SampleData ItemCount=-1}" Background="DarkGray" Margin="10,102,118,10"/>
     </Grid>
+
+
 </Page>
